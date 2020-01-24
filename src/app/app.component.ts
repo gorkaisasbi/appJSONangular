@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import postres from "../assets/desserts.json";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'appJSONangular';
+
+  postres : any[] = postres.data;
+
+  constructor(){
+    console.log(postres.data);
+  }
+
 }
